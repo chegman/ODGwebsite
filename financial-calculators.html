@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Financial Calculators - Karen Lee CPA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: #ffffff;
+      color: #800000;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .logo img {
+      float: left;
+    }
+    .menu-bar {
+      background: maroon;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+    }
+    .menu-bar ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+    }
+    .menu-bar ul li {
+      width: 200px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .menu-bar ul li a {
+      font-size: 17px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: #800000;
+      left: 0;
+      top: 100%;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 180px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      border-radius: 0;
+      text-align: left;
+    }
+    .sub-menu-1 ul li a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: maroon;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .calculator {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .calculator h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #800000;
+    }
+    .calculator form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .calculator label {
+      font-weight: bold;
+    }
+    .calculator input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 300px;
+    }
+    .calculator button {
+      background: maroon;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: fit-content;
+    }
+    .calculator button:hover {
+      background: #800000;
+    }
+    #result {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #800000;
+    }
+    .disclaimer {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 2rem;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    mark {
+      padding: 6px 12px;
+      color: #ffffff;
+      background: #222;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
+    .footerContainer {
+      width: 100%;
+      padding: 70px 30px 20px;
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: center;
+    }
+    .socialIcons a {
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      font-size: 2em;
+      color: white;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .footer-links {
+      margin-top: 0.5rem;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://cp7.cpasitesolutions.com/~karenlee/images/logo.png" alt="KLA logo">
+  </div>
+<header>
+  <h1>Financial Calculators</h1>
+  <p>Tools to estimate your financial needs.</p>
+</header>
+  <nav>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="business-services.html">Business Services</a></li>
+              <li><a href="tax-services.html">Tax Services</a></li>
+              <li><a href="quickbooks-services.html">QuickBooks Services</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="securesend.html">SecureSend</a></li>
+        <li><a href="resourcecenter.html">Resource Center</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="financial-guides.html">Financial Guides</a></li>
+              <li><a href="tax-center.html">Tax Center</a></li>
+              <li><a href="financial-calculators.html">Financial Calculators</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="https://www.securefirmportal.com/Account/Login/12438">ClientPortal</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="calculator">
+    <h2>What is my potential estate tax liability?</h2>
+    <p>In 2025 estates worth up to $13.99 million will be excluded from paying federal estate tax. This means that the federal government could 'inherit' a significant portion of your estate unless you take measures to preserve your wealth. Use this federal estate tax calculator to help estimate your tax liability.</p>
+
+    <form id="estateTaxForm" onsubmit="calculateEstateTax(event)">
+      <h3>Assets/Liabilities and Assumptions</h3>
+      <label>Personal assets ($):</label>
+      <input type="number" id="personalAssets" min="0" step="0.01" required>
+
+      <label>Growth (0% to 500%):</label>
+      <input type="number" id="personalGrowth" min="0" max="500" step="0.01" required>
+
+      <label>Liability:</label>
+      <input type="number" id="personalLiability" min="0" step="0.01" required>
+
+      <label>Investment assets ($):</label>
+      <input type="number" id="investmentAssets" min="0" step="0.01" required>
+
+      <label>Growth (0% to 500%):</label>
+      <input type="number" id="investmentGrowth" min="0" max="500" step="0.01" required>
+
+      <label>Liability:</label>
+      <input type="number" id="investmentLiability" min="0" step="0.01" required>
+
+      <label>Business assets ($):</label>
+      <input type="number" id="businessAssets" min="0" step="0.01" required>
+
+      <label>Growth (0% to 500%):</label>
+      <input type="number" id="businessGrowth" min="0" max="500" step="0.01" required>
+
+      <label>Liability:</label>
+      <input type="number" id="businessLiability" min="0" step="0.01" required>
+
+      <h3>Assumptions</h3>
+      <label>Charitable contributions ($):</label>
+      <input type="number" id="charitableContributions" min="0" step="0.01" required>
+
+      <label>Probate and final expenses (% of gross estate) (0% to 100%):</label>
+      <input type="number" id="probateExpenses" min="0" max="100" step="0.01" required>
+
+      <label>Years to project estate growth (0 to 120):</label>
+      <input type="number" id="years" min="0" max="120" step="1" required>
+
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+
+    <div class="disclaimer">
+      <p>This information may help you analyze your financial needs. It is based on information and assumptions provided by you regarding your goals, expectations and financial situation. The calculations do not infer that the company assumes any fiduciary duties. The calculations provided should not be construed as financial, legal or tax advice. In addition, such information should not be relied upon as the only source of information. This information is supplied from sources we believe to be reliable but we cannot guarantee its accuracy. Hypothetical illustrations may provide historical or current performance information. Past performance does not guarantee nor indicate future results.</p>
+    </div>
+  </section> 
+  <footer>
+    <div class="tp-caption">
+      <h1><mark>Karen Lee & Associates</mark></h1>
+      <div class="footerContainer">
+        <div style="display: flex; justify-content: center; align-items: flex-start; position: relative;">
+          <div style="text-align: center;">
+            <div class="socialIcons">
+              <a href="https://www.facebook.com/people/Karen-Lee-Associates/100054610623019/?ref=hl#" class="fa fa-facebook"></a>
+              <a href="https://x.com/klacpa2012" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/karen-lee-0328764a/" class="fa fa-linkedin"></a>  
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>© 2025 Karen Lee CPA. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  <script>
+    function calculateEstateTax(event) {
+      event.preventDefault();
+      
+      const exemption = 13990000; // 2025 federal estate tax exemption
+      const taxRate = 0.40; // 40% tax rate on amount above exemption
+
+      // Get input values
+      const personalAssets = parseFloat(document.getElementById('personalAssets').value) || 0;
+      const personalGrowth = parseFloat(document.getElementById('personalGrowth').value) / 100 || 0;
+      const personalLiability = parseFloat(document.getElementById('personalLiability').value) || 0;
+
+      const investmentAssets = parseFloat(document.getElementById('investmentAssets').value) || 0;
+      const investmentGrowth = parseFloat(document.getElementById('investmentGrowth').value) / 100 || 0;
+      const investmentLiability = parseFloat(document.getElementById('investmentLiability').value) || 0;
+
+      const businessAssets = parseFloat(document.getElementById('businessAssets').value) || 0;
+      const businessGrowth = parseFloat(document.getElementById('businessGrowth').value) / 100 || 0;
+      const businessLiability = parseFloat(document.getElementById('businessLiability').value) || 0;
+
+      const charitableContributions = parseFloat(document.getElementById('charitableContributions').value) || 0;
+      const probateExpensesPercent = parseFloat(document.getElementById('probateExpenses').value) / 100 || 0;
+      const years = parseInt(document.getElementById('years').value) || 0;
+
+      // Calculate future value of assets with growth
+      const personalFutureValue = personalAssets * Math.pow(1 + personalGrowth, years);
+      const investmentFutureValue = investmentAssets * Math.pow(1 + investmentGrowth, years);
+      const businessFutureValue = businessAssets * Math.pow(1 + businessGrowth, years);
+
+      // Total gross estate
+      const grossEstate = personalFutureValue + investmentFutureValue + businessFutureValue;
+
+      // Deductions
+      const totalLiabilities = personalLiability + investmentLiability + businessLiability;
+      const probateExpenses = grossEstate * probateExpensesPercent;
+      const totalDeductions = totalLiabilities + charitableContributions + probateExpenses;
+
+      // Taxable estate
+      const taxableEstate = Math.max(0, grossEstate - totalDeductions);
+      
+      // Estate tax liability
+      const taxableAmount = Math.max(0, taxableEstate - exemption);
+      const estateTax = taxableAmount * taxRate;
+
+      // Display result
+      document.getElementById('result').innerHTML = `
+        Gross Estate: $${grossEstate.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}<br>
+        Total Deductions: $${totalDeductions.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}<br>
+        Taxable Estate: $${taxableEstate.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}<br>
+        Potential Estate Tax Liability: $${estateTax.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+      `;
+    }
+  </script>
+</body>
+</html>

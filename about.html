@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>About Us - Karen Lee CPA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: #ffffff;
+      color: #800000;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .logo img {
+      float: left;
+    }
+    .menu-bar {
+      background: maroon;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+    }
+    .menu-bar ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+    }
+    .menu-bar ul li {
+      width: 200px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .menu-bar ul li a {
+      font-size: 17px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: #800000;
+      left: 0;
+      top: 100%;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 180px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      border-radius: 0;
+      text-align: left;
+    }
+    .sub-menu-1 ul li a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: maroon;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2rem;
+    }
+    .about-column {
+      flex: 1;
+      min-width: 300px;
+    }
+    .about h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .about h3 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .image-placeholder {
+      background: #ddd;
+      height: 200px;
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-weight: bold;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    mark {
+      padding: 6px 12px;
+      color: #ffffff;
+      background: #222;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
+    .footerContainer {
+      width: 100%;
+      padding: 70px 30px 20px;
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: center;
+    }
+    .socialIcons a {
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      font-size: 2em;
+      color: white;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .footer-links {
+      margin-top: 0.5rem;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://cp7.cpasitesolutions.com/~karenlee/images/logo.png"alt="KLA logo">
+  </div> 
+  <header>  
+    <h1>Karen Lee CPA</h1>
+    <p>Your Trusted Partner in Financial Success</p>
+  </header>
+  <nav>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="business-services.html">Business Services</a></li>
+              <li><a href="tax-services.html">Tax Services</a></li>
+              <li><a href="quickbooks-services.html">QuickBooks Services</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="securesend.html">SecureSend</a></li>
+        <li><a href="resourcecenter.html">Resource Center</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="financial-guides.html">Financial Guides</a></li>
+              <li><a href="tax-center.html">Tax Center</a></li>
+              <li><a href="financial-calculators.html">Financial Calculators</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="https://www.securefirmportal.com/Account/Login/12438">ClientPortal</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="about">
+
+    <div class="about-column">
+      <h2>Our Values</h2>
+      <img alt="Family" src="Karen Lee - CPA About Us 2.jpg" style="width: 335px; float: left; height: 223px; margin-left: 10px; margin-right: 10px;">
+      <p>Our firm provides outstanding service to our clients because of our dedication to the three underlying principles of professionalism, responsiveness, and quality.</p>
+
+      <h3>Professionalism</h3>
+      <p>By combining our expertise, experience, and the energy of our staff, each client receives close personal and professional attention.</p>
+      <p>Our high standards, service, and specialized staff spell the difference between our outstanding performance and other firms. We make sure that every client is served by the expertise of our whole firm and team of outside mentors.</p>
+
+      <h3>Responsiveness</h3>
+      <p>Our firm is responsive. Companies who choose our firm rely on competent advice and fast, accurate personnel. We provide total financial services to individuals, large and small businesses, and other agencies.</p>
+      <p>We use cloud accounting and payroll services to service our clients in the most efficient and up-to-date manner possible. You can rest assured that your small business needs are always looked at so we can identify issues before they become major problems.</p>
+      <p>To see a listing of our services, please take a moment and look at our services page. Because we get new business from the people who know us best, client referrals are always welcomed and appreciated.</p>
+      <p>Through hard work, we have earned the respect of the business and financial communities. This respect illustrates our diverse talents, dedication, and ability to respond quickly.</p>
+
+      <h3>Quality</h3>
+      <p>An accounting firm is known for the quality of its service. Our firm's reputation reflects the high standards we demand of ourselves.</p>
+      <p>Our primary goal as a trusted advisor and small business "coach" is to be available and to provide insightful advice to enable our clients to make informed financial decisions. We do not accept anything less from ourselves and this is what we deliver to you.</p>
+      <p>We feel it is extremely important to continually professionally educate ourselves to improve our technical expertise, financial knowledge, and service to our clients.</p>
+      <p>Our high service quality and "raving fan" clients are the result of our commitment to excellence.</p>
+      <p>We will answer all of your questions, as they impact both your tax and financial situations. We welcome you to contact us anytime.</p>
+    </div>
+
+    <div class="about-column">
+      <h2>About The Owner</h2>
+      <img alt="Karen Lee" src="Karen Lee - CPA About Us 1.jpg" style="width: 150px; float: left; height: 225px; margin-left: 10px; margin-right: 10px;">
+      <p>Karen Mitsuko Lee (formerly Higashi) was born in Southern California but her family moved back to Hawaii when she was one years old, so she is proud to be a fourth generation Japanese with deep Hawaiian roots. She decided accounting suited her personality and natural abilities in high school and chose the University of Puget Sound in Tacoma, WA to further her education. She excelled at the University of Puget Sound and was a cum laude graduate with Bachelor of Arts degrees in Accounting and Business Leadership in 1997.</p>
+      <br>
+      <p>After spending two summers working in the tax department of Safeco Insurance she realized that tax work was for her. She chose Bauer Evans in Everett, WA to gain some additional work experience in public accounting. She enjoyed six and a half years developing trusted relationships with her clients and gaining many valuable accounting skills such preparing audits, compilation, reviews, sales & use taxes, payroll taxes, small business consulting as well as preparing tax returns for individuals, businesses, non-profits, trusts, and estates.</p>
+      <br>
+      <p>Desiring to spend more time with her family, she left Bauer Evans to join the private sector in hopes of a more balanced work schedule. She became the Director of Corporate Tax at Noble House Hotels & Resorts in Kirkland, WA and spent the next 9 years there. She became a key member of the finance team and was able to help navigate the company through the tax complexities of a preferred equity investor and over the years took over managing the 401(k) plan for the entire company, transitioning payroll processors for all of the hotels to save over $150K in fees while handling all of the tax compliance work and maintaining numerous sets of books for its many companies.</p>
+      <br>
+      <p>With the help and encouragement of her family she decided the time was right to start her own accounting practice in the fall of 2012. Her mission is to create a lifestyle practice that maximizes the benefits of technology to service clients more efficiently and effectively. Her proactive approach to accounting frees her clients’ from the worries of audits and allows them to rest assured that they are paying the least amount of taxes as possible. Her constant drive for continual improvement and excellence in all she does is what drives this company.</p>
+      <br>
+      <p>Karen and Charlton are the proud parents to Hannah, Isaac and Jonathan and they enjoy spending time nurturing them to be the leaders of our next generation. As former church planters, Karen and Charlton are passionate about helping to train and lead short term mission teams to Cambodia in the future. They currently reside in Renton, WA.</p>
+    </div>
+  </section>
+  <footer>
+    <div class="tp-caption">
+      <h1><mark>Karen Lee & Associates</mark></h1>
+      <div class="footerContainer">
+        <div style="display: flex; justify-content: center; align-items: flex-start; position: relative;">
+          <div style="text-align: center;">
+            <div class="socialIcons">
+              <a href="https://www.facebook.com/people/Karen-Lee-Associates/100054610623019/?ref=hl#" class="fa fa-facebook"></a>
+              <a href="https://x.com/klacpa2012" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/karen-lee-0328764a/" class="fa fa-linkedin"></a>  
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2025 Karen Lee CPA. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Business Services - Karen Lee CPA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: #ffffff;
+      color: #800000;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .logo img {
+      float: left;
+    }
+    .menu-bar {
+      background: maroon;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+    }
+    .menu-bar ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+    }
+    .menu-bar ul li {
+      width: 200px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .menu-bar ul li a {
+      font-size: 17px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: #800000;
+      left: 0;
+      top: 100%;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 180px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      border-radius: 0;
+      text-align: left;
+    }
+    .sub-menu-1 ul li a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: maroon;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .services {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .services h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #800000;
+    }
+    .services h2 a {
+      color: #800000;
+      text-decoration: none;
+    }
+    .services h2 a:hover {
+      text-decoration: underline;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services ul li {
+      margin: 0.5rem 0;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    mark {
+      padding: 6px 12px;
+      color: #ffffff;
+      background: #222;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
+    .footerContainer {
+      width: 100%;
+      padding: 70px 30px 20px;
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: center;
+    }
+    .socialIcons a {
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      font-size: 2em;
+      color: white;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .footer-links {
+      margin-top: 0.5rem;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://cp7.cpasitesolutions.com/~karenlee/images/logo.png" alt="KLA logo">
+  </div>
+<header>
+  <h1>Business Services</h1>
+  <p>Comprehensive accounting solutions for your business.</p>
+</header>
+  <nav>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="business-services.html">Business Services</a></li>
+              <li><a href="tax-services.html">Tax Services</a></li>
+              <li><a href="quickbooks-services.html">QuickBooks Services</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="securesend.html">SecureSend</a></li>
+        <li><a href="resourcecenter.html">Resource Center</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="financial-guides.html">Financial Guides</a></li>
+              <li><a href="tax-center.html">Tax Center</a></li>
+              <li><a href="financial-calculators.html">Financial Calculators</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="https://www.securefirmportal.com/Account/Login/12438">ClientPortal</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="services">
+    <h2>Business Services</h2>
+      <p>As a small business owner you have more important things to do than to keep your own books. We take care of your books for you, so you can get back to the job of running your business and generating profits.</p>
+      <p>Each month or quarter we'll do the following things for you...</p>
+      <ul>
+        <li>Reconcile your bank account</li>
+        <li>Generate an income statement</li>
+        <li>Generate a balance sheet</li>
+        <li>Clean up your general ledger</li>
+        <li>Provide unlimited consultations</li>
+      </ul>
+      <p>These tasks form the solid foundation of your Small Business Accounting Bellevue. You can customize the package of services you receive by adding payroll, tax planning, tax preparation, or any of our other services.</p>
+      <h2>Bank Reconciliation</h2>
+        <p>Reconciling your business checking account each month allow us to keep your bank account, accounting, and taxes up-to-date.</p>
+        <p>Having us reconcile your account each month allows you to...</p>
+        <ul>
+          <li>Identify lost checks, lost deposits and unauthorized wire transactions.</li>
+          <li>Detect and prevent excess/unjustified bank charges and ensures transactions are posted correctly by your bank.</li>
+          <li>Detect and prevent embezzlement of funds from within your company.</li>
+          <li>Know how your business is doing? You can't really know unless all accounts are reconciled and properly accounted for on your financial statement.</li>
+          <li>Manage your cash more effectively. Proper management of funds not only saves money, it makes money for you.</li>
+          <li>Protect yourself. By timely reconciling and promptly objecting to your bank about any unauthorized, fraudulent or forged checks presented to your bank and paid by that bank, you can relieve your agency of responsibility for the shortfall and transfer the risk to the bank. This reason to reconcile alone should be enough. Crime exists.</li>
+          <li>Sleep Better. You will sleep more peacefully at night knowing your bank accounts are reconciled, in balance and that all escrow funds, accounts, checks and disbursed funds are properly accounted for.</li>
+        </ul>      
+      <h2>Income Statement</h2>
+        <p>An income statement, otherwise known as a profit and loss statement, basically adds an itemized list of all your revenues and subtracts an itemized list of all your expenses to come up with a profit or loss for the period.</p>
+        <p>An income statement allows you to...</p>
+        <ul>
+          <li>Track revenues and expenses so that you can determine the operating performance of your business.</li>
+          <li>Determine what areas of your business are over-budget or under-budget.</li>
+          <li>Identify specific items that are causing unexpected expenditures. Like phone, fax, mail, or supply expenses.</li>
+          <li>Track dramatic increases in product returns or cost of goods sold as a percentage of sales.</li>
+          <li>Determine your income tax liability.</li>
+        </ul>
+      <h2>Balance Sheet</h2>
+        <p>A balance sheet gives you a snapshot of your business' financial condition at a specific moment in time.</p>
+        <p>A balance sheet helps you:</p>
+        <ul>
+          <li>Quickly get a handle on the financial strength and capabilities of your business</li>
+          <li>Identify and analyze trends, particularly in the area of receivables and payables. For example, if your receivables cycle is lengthening, maybe you can collect your receivables more aggressively</li>
+          <li>Determine if your business is in a position to expand</li>
+          <li>Determine if your business can easily handle the normal financial ebbs and flows of revenues and expenses</li>
+          <li>Determine if you need to take immediate steps to bolster cash reserves</li>
+          <li>Determine if your business has been slowing down payables to forestall an inevitable cash shortage</li>
+        </ul>
+          <p>Balance sheets, along with income statements, are the most basic elements in providing financial reporting to potential lenders such as banks, investors, and vendors who are considering how much credit to grant you.</p>
+      <h2>Maintaining a Clean General Ledger</h2>
+        <p>The general ledger is the core of your company's financial records. These records constitute the central "books" of your system. Since every transaction flows through the general ledger, a problem with your general ledger throws off all your books.</p>
+        <p>Having us review your general ledger system each month allows us to hunt down any discrepancies such as double billings or any unrecorded payments. Then we'll fix the discrepancies so your books are always accurate and kept in tip top shape.</p>
+      <h2>Unlimited Consultations</h2>
+        <p>We are always available to spend time with you so you fully understand how to interpret and utilize the financial information we provide. Our consultations are already included in our price, so please feel free to call us whenever you have a question or concern.</p>
+  </section>  
+  <footer>
+    <div class="tp-caption">
+      <h1><mark>Karen Lee & Associates</mark></h1>
+      <div class="footerContainer">
+        <div style="display: flex; justify-content: center; align-items: flex-start; position: relative;">
+          <div style="text-align: center;">
+            <div class="socialIcons">
+              <a href="https://www.facebook.com/people/Karen-Lee-Associates/100054610623019/?ref=hl#" class="fa fa-facebook"></a>
+              <a href="https://x.com/klacpa2012" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/karen-lee-0328764a/" class="fa fa-linkedin"></a>  
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>© 2025 Karen Lee CPA. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Tax Center - Karen Lee CPA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: #ffffff;
+      color: #800000;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .logo img {
+      float: left;
+    }
+    .menu-bar {
+      background: maroon;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+    }
+    .menu-bar ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+    }
+    .menu-bar ul li {
+      width: 200px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .menu-bar ul li a {
+      font-size: 17px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: #800000;
+      left: 0;
+      top: 100%;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 180px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      border-radius: 0;
+      text-align: left;
+    }
+    .sub-menu-1 ul li a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: maroon;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .tax-center {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .tax-center h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #800000;
+    }
+    .tax-center h3 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #800000;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+      color: #800000;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+    mark {
+      padding: 6px 12px;
+      color: #ffffff;
+      background: #222;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
+    .footerContainer {
+      width: 100%;
+      padding: 70px 30px 20px;
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: center;
+    }
+    .socialIcons a {
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      font-size: 2em;
+      color: white;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .footer-links {
+      margin-top: 0.5rem;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://cp7.cpasitesolutions.com/~karenlee/images/logo.png" alt="KLA logo">
+  </div>
+<header>
+  <h1>Tax Center</h1>
+  <p>2025 Tax Rates and Information</p>
+</header>
+  <nav>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="business-services.html">Business Services</a></li>
+              <li><a href="tax-services.html">Tax Services</a></li>
+              <li><a href="quickbooks-services.html">QuickBooks Services</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="securesend.html">SecureSend</a></li>
+        <li><a href="resourcecenter.html">Resource Center</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="financial-guides.html">Financial Guides</a></li>
+              <li><a href="tax-center.html">Tax Center</a></li>
+              <li><a href="financial-calculators.html">Financial Calculators</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="https://www.securefirmportal.com/Account/Login/12438">ClientPortal</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="tax-center">
+    <h2>2025 Tax Rates</h2>
+
+    <h3>Single Taxpayers (Standard Deduction: $15,000)</h3>
+    <table>
+      <tr><th>Rate</th><th>Income Range</th></tr>
+      <tr><td>10%</td><td>$0 to $11,925</td></tr>
+      <tr><td>12%</td><td>$11,925 to $48,475</td></tr>
+      <tr><td>22%</td><td>$48,475 to $103,350</td></tr>
+      <tr><td>24%</td><td>$103,350 to $197,300</td></tr>
+      <tr><td>32%</td><td>$197,300 to $250,525</td></tr>
+      <tr><td>35%</td><td>$250,525 to $626,350</td></tr>
+      <tr><td>37%</td><td>Over $626,350</td></tr>
+    </table>
+
+    <h3>Married Jointly & Surviving Spouses (Standard Deduction: $30,000)</h3>
+    <table>
+      <tr><th>Rate</th><th>Income Range</th></tr>
+      <tr><td>10%</td><td>$0 to $23,850</td></tr>
+      <tr><td>12%</td><td>$23,850 to $96,950</td></tr>
+      <tr><td>22%</td><td>$96,950 to $206,700</td></tr>
+      <tr><td>24%</td><td>$206,700 to $394,600</td></tr>
+      <tr><td>32%</td><td>$394,600 to $501,050</td></tr>
+      <tr><td>35%</td><td>$501,050 to $751,600</td></tr>
+      <tr><td>37%</td><td>Over $751,600</td></tr>
+    </table>
+
+    <h3>Married Filing Separately (Standard Deduction: $15,000)</h3>
+    <table>
+      <tr><th>Rate</th><th>Income Range</th></tr>
+      <tr><td>10%</td><td>$0 to $11,925</td></tr>
+      <tr><td>12%</td><td>$11,925 to $48,475</td></tr>
+      <tr><td>22%</td><td>$48,475 to $103,350</td></tr>
+      <tr><td>24%</td><td>$103,350 to $197,300</td></tr>
+      <tr><td>32%</td><td>$197,300 to $250,525</td></tr>
+      <tr><td>35%</td><td>$250,525 to $375,800</td></tr>
+      <tr><td>37%</td><td>Over $375,800</td></tr>
+    </table>
+
+    <h3>Head of Household (Standard Deduction: $22,500)</h3>
+    <table>
+      <tr><th>Rate</th><th>Income Range</th></tr>
+      <tr><td>10%</td><td>$0 to $17,000</td></tr>
+      <tr><td>12%</td><td>$17,000 to $64,850</td></tr>
+      <tr><td>22%</td><td>$64,850 to $103,350</td></tr>
+      <tr><td>24%</td><td>$103,350 to $197,300</td></tr>
+      <tr><td>32%</td><td>$197,300 to $250,500</td></tr>
+      <tr><td>35%</td><td>$250,500 to $626,350</td></tr>
+      <tr><td>37%</td><td>Over $626,350</td></tr>
+    </table>
+
+    <h3>Estates & Trusts</h3>
+    <table>
+      <tr><th>Rate</th><th>Income Range</th></tr>
+      <tr><td>10%</td><td>$0 to $3,150</td></tr>
+      <tr><td>24%</td><td>$3,150 to $11,450</td></tr>
+      <tr><td>35%</td><td>$11,450 to $15,650</td></tr>
+      <tr><td>37%</td><td>Over $15,650</td></tr>
+    </table>
+
+    <h2>2025 Social Security</h2>
+    <table>
+      <tr><th>Description</th><th>Rate/Value</th></tr>
+      <tr><td>Social Security Tax Rate: Employers</td><td>6.2%</td></tr>
+      <tr><td>Social Security Tax Rate: Employees</td><td>6.2%</td></tr>
+      <tr><td>Social Security Tax Rate: Self-Employed</td><td>12.4%</td></tr>
+      <tr><td>Maximum earnings subject to Social Security tax</td><td>$176,100</td></tr>
+      <tr><td>Maximum earnings subject to Medicare tax</td><td>Unlimited</td></tr>
+      <tr><td>Medicare Tax Rate: Employers</td><td>1.45%</td></tr>
+      <tr><td>Medicare Tax Rate: Employees</td><td>1.45%</td></tr>
+      <tr><td>Medicare Tax Rate: Self-Employed</td><td>2.9%</td></tr>
+      <tr><td>Additional Medicare tax on FICA wages and self-employment income above $200,000 (single filers) or $250,000 (joint filers)</td><td>0.9%</td></tr>
+      <tr><td>Net investment income tax on taxpayers with modified adjusted gross income (MAGI) exceeding $200,000 (single filers) or $250,000 (joint filers)</td><td>3.8%</td></tr>
+    </table>
+
+    <h2>2025 Miscellaneous</h2>
+    <table>
+      <tr><th>Description</th><th>Value</th></tr>
+      <tr><td>Business Section 179 expensing limit</td><td>$1,250,000</td></tr>
+      <tr><td>Business Section 179 phaseout threshold</td><td>$3,130,000</td></tr>
+      <tr><td>First-year bonus depreciation rate</td><td>40%</td></tr>
+      <tr><td>Income threshold after which the Section 199A (qualified business income) deduction for pass-through entities may begin to phase out</td><td>$197,300 (single and head of household); $394,600 (married filing jointly)</td></tr>
+      <tr><td>Qualified small-employer Health Reimbursement Arrangement limit</td><td>$6,350 (single coverage); $12,800 (family coverage)</td></tr>
+      <tr><td>Prior-year safe harbor for estimated taxes of higher-income taxpayers</td><td>110% of 2024 tax liability</td></tr>
+      <tr><td>Standard mileage rate for business driving</td><td>70 cents</td></tr>
+      <tr><td>Standard mileage rate for medical driving</td><td>21 cents</td></tr>
+      <tr><td>Standard mileage rate for moving driving (only members of the Armed Forces on active duty who move because of a permanent change of station)</td><td>21 cents</td></tr>
+      <tr><td>Standard mileage rate for charitable driving</td><td>14 cents</td></tr>
+      <tr><td>Child Tax Credit (per child under age 17 at the end of the tax year)</td><td>$2,000</td></tr>
+      <tr><td>Unearned income maximum for children under 19 before kiddie tax applies</td><td>$1,350</td></tr>
+      <tr><td>Maximum capital gains tax rate for taxpayers with income up to $48,350 for single filers, $96,700 for married filing jointly</td><td>0%</td></tr>
+      <tr><td>Maximum capital gains tax rate for taxpayers with income $48,350 to $533,400 for single filers, $96,700 to $600,050 for married filing jointly</td><td>15%</td></tr>
+      <tr><td>Maximum capital gains tax rate for taxpayers with income above $533,400 for single filers, $600,050 for married filing jointly</td><td>20%</td></tr>
+      <tr><td>Capital gains tax rate for unrecaptured Sec. 1250 gains</td><td>25%</td></tr>
+      <tr><td>Capital gains tax rate on collectibles</td><td>28%</td></tr>
+      <tr><td>Maximum contribution for Traditional/Roth IRA</td><td>$7,000 if under age 50 / $8,000 if 50 or older</td></tr>
+      <tr><td>Maximum employee contribution to SIMPLE IRA</td><td>$16,500 if under age 50 / $20,000 if 50 or older + $1,750 if age 60, 61, 62 or 63</td></tr>
+      <tr><td>Maximum contribution to SEP IRA</td><td>25% of eligible compensation up to $70,000</td></tr>
+    </table>
+
+    <h2>2025 Education</h2>
+    <table>
+      <tr><th>Description</th><th>Value</th></tr>
+      <tr><td>American Opportunity Credit (per student)</td><td>$2,500</td></tr>
+      <tr><td>Lifetime Learning Credit (per return)</td><td>$2,000</td></tr>
+      <tr><td>Student Loan Interest Deduction (per return)</td><td>$2,500</td></tr>
+      <tr><td>Coverdell Education Savings Account Contribution (per student)</td><td>$2,000</td></tr>
+    </table>
+
+    <h2>2025 Standard Meal Rates for Family Child Care Providers</h2>
+    <h3>July 1, 2024 - June 30, 2025 (Tier I)</h3>
+    <table>
+      <tr><th>Description</th><th>Value</th></tr>
+      <tr><td>For each breakfast</td><td>$1.66</td></tr>
+      <tr><td>For each lunch or supper</td><td>$3.15</td></tr>
+      <tr><td>For each snack (up to 3 per day for each child)</td><td>$0.93</td></tr>
+    </table>
+
+    <h3>July 1, 2024 - June 30, 2025 (Tier II)</h3>
+    <table>
+      <tr><th>Description</th><th>Value</th></tr>
+      <tr><td>For each breakfast</td><td>$2.66</td></tr>
+      <tr><td>For each lunch or supper</td><td>$5.10</td></tr>
+      <tr><td>For each snack (up to 3 per day for each child)</td><td>$1.52</td></tr>
+    </table>
+
+    <h3>July 1, 2024 - June 30, 2025 (Alaska)</h3>
+    <table>
+      <tr><th>Description</th><th>Value</th></tr>
+      <tr><td>For each breakfast</td><td>$2.14</td></tr>
+      <tr><td>For each lunch or supper</td><td>$4.09</td></tr>
+      <tr><td>For each snack (up to 3 per day for each child)</td><td>$1.22</td></tr>
+    </table>
+
+    <p><strong>Source:</strong> Federal Register</p>
+  </section>
+  <footer>
+    <div class="tp-caption">
+      <h1><mark>Karen Lee & Associates</mark></h1>
+      <div class="footerContainer">
+        <div style="display: flex; justify-content: center; align-items: flex-start; position: relative;">
+          <div style="text-align: center;">
+            <div class="socialIcons">
+              <a href="https://www.facebook.com/people/Karen-Lee-Associates/100054610623019/?ref=hl#" class="fa fa-facebook"></a>
+              <a href="https://x.com/klacpa2012" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/karen-lee-0328764a/" class="fa fa-linkedin"></a>  
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>© 2025 Karen Lee CPA. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>

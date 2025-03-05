@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Karen Lee CPA - Accounting & Tax Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #ffffff;
+      color: grey;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: #ffffff;
+      color: #800000;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .logo img {
+      float: left;
+    }
+    .menu-bar {
+      background: maroon;
+      height: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+    }
+    .menu-bar ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+    }
+    .menu-bar ul li {
+      width: 200px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .menu-bar ul li a {
+      font-size: 17px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .sub-menu-1 {
+      display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 {
+      display: block;
+      position: absolute;
+      background: #800000;
+      left: 0;
+      top: 100%;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul {
+      display: block;
+      margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li {
+      width: 180px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      border-radius: 0;
+      text-align: left;
+    }
+    .sub-menu-1 ul li a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: maroon;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: #f4f4f4;
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      float: center;
+    }
+    .hero h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .services, .resources, .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+    .services h2, .resources h2, .contact h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .services ul, .resources ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services ul li, .resources ul li {
+      margin: 0.5rem 0;
+    }
+    .cta-button {
+      background: maroon;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 1rem 0;
+    }
+    .cta-button:hover {
+      background: #800000;
+    }
+    .contact-info {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 0;
+    }
+    .image-gallery {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+    }
+    .image-gallery img {
+      width: 200px;
+      height: 150px;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+    }
+    .inline-sections {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+    .inline-sections > section {
+      flex: 1;
+      margin: 0 1rem;
+      text-align: center;
+    }
+    .newsletter {
+      padding: 2rem;
+      text-align: center;
+      flex: 1;
+      margin: 0 1rem;
+    }
+    .newsletter form {
+      display: inline-block;
+      text-align: left;
+      max-width: 400px;
+    }
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 0; 
+    }
+    .contact h2 {
+      margin-bottom: 0.5rem; 
+    }
+    .contact-info {
+      text-align: center; 
+      margin-top: 0; 
+      max-width: 600px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    mark {
+      padding: 6px 12px;
+      color: #ffffff;
+      background: #222;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+    }
+    .footerContainer {
+      width: 100%;
+      padding: 70px 30px 20px;
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: center;
+    }
+    .socialIcons a {
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+      font-size: 2em;
+      color: white;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .footer-links {
+      margin-top: 0.5rem;
+    }
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .developer-info {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+    .developer-info a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .developer-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://cp7.cpasitesolutions.com/~karenlee/images/logo.png" alt="KLA logo">
+  </div>
+<header>
+  <h1>Karen Lee CPA</h1>
+  <p>Your Trusted Partner in Financial Success</p>
+</header>
+  <nav>
+    <div class="menu-bar">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="services.html">Our Services</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="business-services.html">Business Services</a></li>
+              <li><a href="tax-services.html">Tax Services</a></li>
+              <li><a href="quickbooks-services.html">QuickBooks Services</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="securesend.html">SecureSend</a></li>
+        <li><a href="resourcecenter.html">Resource Center</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="financial-guides.html">Financial Guides</a></li>
+              <li><a href="tax-center.html">Tax Center</a></li>
+              <li><a href="financial-calculators.html">Financial Calculators</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="https://www.securefirmportal.com/Account/Login/12438">ClientPortal</a></li> 
+      </ul>
+    </div>
+  </nav>
+  <section class="hero">
+    <img src="https://www.karenleecpa.com/images/galleries/style/565/feature-1.jpg" alt="More than Just Numbers">
+    <h2>Expert Accounting & Tax Services</h2>
+    <p>We provide tailored financial solutions to help you achieve your goals.</p>
+    <a href="scheduling.html" class="cta-button" target="_blank">Book an Appointment</a>
+  </section>
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><a href="business-services.html">Business Services</a></li>
+      <li><a href="tax-services.html">Tax Services</a></li>
+      <li><a href="quickbooks-services.html">QuickBooks Services</a></li>
+    </ul>
+  </section>
+  <div class="inline-sections">
+    <section class="resources" id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://www.securefirmportal.com/Account/Login/12438">ClientPortal</a></li>
+        <li><a href="securesend.html">SecureSend</a></li>
+        <li><a href="resourcecenter.html">Resource Center</a></li>
+        <li><a href="employment.html">Employment Opportunities</a></li>
+      </ul>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>Karen Lee & Associates</strong></p>
+        <p>14205 SE 36th Street, Suite 100</p>
+        <p>Bellevue, WA 98006</p>
+        <p>Phone: <a href="tel:4252206924">(425) 220-6924</a></p>
+        <p>Fax: (888) 674-6987</p>
+        <p><strong>Mailing Address:</strong></p>
+        <p>PO Box 3468</p>
+        <p>Renton, WA 98056</p>
+        <p>Email: <a href="mailto:karen@karenleecpa.com">karen@karenleecpa.com</a></p>
+      </div>
+    </section>
+    <section class="newsletter" id="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form action="https://example.com/subscribe" method="POST" target="_blank">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="cta-button">Subscribe</button>
+      </form>
+    </section>
+  </div>
+  <section class="image-gallery">
+    <img src="Karen Lee - CPA Homepage Certification 1.jpg" alt="Image 1">
+    <img src="Karen Lee - CPA Homepage Certification 2.jpg" alt="Image 2">
+    <img src="Karen Lee - CPA Homepage Certification 3.jpg" alt="Image 3">
+    <img src="Karen Lee - CPA Homepage Certification 4.jpg" alt="Image 4">
+  </section>
+  <footer>
+    <div class="tp-caption">
+      <h1><mark>Karen Lee & Associates</mark></h1>
+    <div class="developer-info" style="position: absolute; left: calc(50% + 500px); text-align: left; ">
+      <p><strong>Website Developer Information</strong></p>
+      <br>
+      <p>Brian Chege - <a href="https://www.linkedin.com/in/brian-chege-9751551b3">Linkedin</a></p>
+      <br>
+      <p>Alex Kusuma - <a href="https://www.linkedin.com/in/axkusum">Linkedin</a></p>
+      <br>
+      <p>Anna Meas - <a href="https://www.linkedin.com/in/annabel-meas-357460221/">Linkedin</a></p>
+      <br>
+      <p>Brendan Pham - <a href="https://www.linkedin.com/in/brendan-pham-6485702aa/">Linkedin</a></p>
+      <br>
+    </div>
+      <div class="footerContainer">
+        <div style="display: flex; justify-content: center; align-items: flex-start; position: relative;">
+          <div style="text-align: center;">
+            <div class="socialIcons">
+              <a href="https://www.facebook.com/people/Karen-Lee-Associates/100054610623019/?ref=hl#" class="fa fa-facebook"></a>
+              <a href="https://x.com/klacpa2012" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/karen-lee-0328764a/" class="fa fa-linkedin"></a>                      
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>© 2025 Karen Lee CPA. All rights reserved.</p>
+    <div class="footer-links"> 
+      <a href="disclaimer.html">Disclaimer</a> 
+      <a href="privacypolicy.html">Privacy Policy</a> 
+    </div>
+  </footer>
+</body>
+</html>
